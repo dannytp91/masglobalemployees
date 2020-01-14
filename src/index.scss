@@ -1,0 +1,18 @@
+@import '../node_modules/bulma/bulma.sass';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}

@@ -1,0 +1,115 @@
+.container {
+    position: relative;
+    flex-grow: 1;
+    width: 50%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 992px) {
+        width: 80%
+    }
+
+    @media screen and (min-width: 1250px) {
+        width: 1344px;
+    }
+}
+
+.columns-container {
+    display: flex;
+}
+
+.column-container {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.half-column {
+    margin: 0 auto;
+}
+
+.is-centered {
+    justify-content: center;
+    text-align: center;
+}
+
+
+.form-search-employee {
+    margin-top: 2rem;
+}
+
+// Form
+.form-field {
+    display: flex;
+    flex-direction: column;
+    padding: .75rem;
+}
+
+.field-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.is-horizontal {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-label .form-input, .form-input {
+    padding: .75rem;
+}
+
+.form-field {
+
+    .input {
+        appearance: none;
+        background-color: #fff;
+        border-radius: .3rem;
+        border: 1px solid #dbdbdb;
+        display: inline-flex;
+        height: 2rem;
+        justify-content: flex-start;
+        line-height: 1.5;
+        outline: none;
+        padding: .5rem;
+    }
+
+    .button {
+        appearance: none;
+        background: #1cbbb4;
+        border-radius: .3rem;
+        border: 1px solid #dbdbdb;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1rem;
+        outline: none;
+        overflow: hidden;
+        padding: .5rem 1rem;
+        position: relative;
+
+        &:after {
+            background: #20d8cf;
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            padding-left: 100%;
+            padding-top: 0;
+            position: absolute;
+            top: 0;
+            transition: all .8s;
+          }
+          
+          &:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+          }
+    }
+    
+}

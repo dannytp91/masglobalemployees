@@ -1,0 +1,13 @@
+.table {
+    
+    &__no-results {
+        background: #f6f6f6;
+        font-size: 1.5rem;
+        
+
+        &--center-text {
+            display: block;
+            text-align: center;
+        }
+    }
+}
